@@ -1,0 +1,26 @@
+body {
+    background-color: #d9d9d9;
+}
+#details {
+    width: 60%;
+    margin: auto;
+    text-align: left;
+}
+
+#details h3 {
+    font-family: 'bold';
+    font-size: 30px;
+}
+
+#details p{
+    font-family: 'regular';
+    font-size: 20px;
+}
+
+
+#details img {
+    width: 90px;
+    border-radius: 50%;
+    padding: auto;
+    padding-right: 10px;
+}

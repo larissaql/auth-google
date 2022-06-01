@@ -1,14 +1,11 @@
 import './styles.css'
 
-const renderWelcomePanel = (container: HTMLElement) => {
+const renderDetails = (container: HTMLElement) => {
     const userName = localStorage.getItem('userName')
     const photoProfile = localStorage.getItem('photoProfile')
+    const phoneNum = localStorage.getItem('phoneNum')
+    const email = localStorage.getItem('email')
 
-    const date = new Date()
-    const day = String(date.getDate())
-    const month = String(date.getMonth() + 1)
-    const year = date.getFullYear()
-    const current = date.getHours() + ':' + date.getMinutes()
 
     const htmlContent = `
 
@@ -29,14 +26,16 @@ const renderWelcomePanel = (container: HTMLElement) => {
         </ul>
         </div>
 
-        <div id="welcome">
-            <h1>Olá, ${userName}!</h1>
-            <h2>${day}/${month}/${year} - ${current}</h2>
-           
+        <div id="details">
+            <h3>${userName}</h3>
+            <img src="${photoProfile}">
+            <p>Número: ${phoneNum}</p>
+            <p>Email: ${email}</p>
+            
         </div>
     `
 container.innerHTML = htmlContent
 
 }
 
-export default renderWelcomePanel
+export default renderDetails

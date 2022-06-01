@@ -1,4 +1,51 @@
 @font-face {
     font-family: 'regular';
-    src: url(../fonts/Montserrat-Regular.ttf);
+    src: url(../fonts/Urbanist-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url(../fonts/Urbanist-Bold.ttf);
+}
+
+
+#header {
+    background-color: #353535;
+    padding: 20px;
+    font-family: 'bold';
+    display: flex;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+}
+
+#header a:hover {
+    color: #d9d9d9;
+}
+
+#header * {
+    vertical-align: middle;
+}
+
+#header img {
+    width: 55px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+#titulo {
+    font-size: 200%;
+}
+
+#menu {
+    list-style: none;
+    font-size: 150%;
+    margin: 0 0 0 auto;
+}
+
+#menu li {
+    display: inline;
+    margin-left: 30px;
 }
