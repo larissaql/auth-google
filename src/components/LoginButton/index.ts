@@ -12,9 +12,10 @@ const onClick = () => {
             const credential = GoogleAuthProvider.credentialFromResult(result)
             const token = credential?.accessToken
             const { user } = result
-            const { displayName } = user
+            const { displayName, photoURL } = user
             localStorage.setItem('token', token || '')
             localStorage.setItem('userName', displayName || '')
+            localStorage.setItem('photoProfile', photoURL || '')
 
             if(token){
                 location.href = 'index.html'
