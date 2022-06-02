@@ -14,7 +14,7 @@ const renderWelcomePanel = (container: HTMLElement) => {
 
         <div id="header">
         <img src="${photoProfile}">
-        <a href="/" id="titulo">Alfa Cred</a>
+        <a href="/" id="titulo">BMS</a>
         
         <ul id="menu">
             <li>
