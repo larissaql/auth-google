@@ -5,6 +5,7 @@ const renderDetails = (container: HTMLElement) => {
     const photoProfile = localStorage.getItem('photoProfile')
     const phoneNum = localStorage.getItem('phoneNum')
     const email = localStorage.getItem('email')
+    console.log(photoProfile)
 
 
     const htmlContent = `
